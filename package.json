@@ -1,0 +1,20 @@
+{
+  "name": "prisma-nyc-sigterm-reproducer",
+  "version": "1.0.0",
+  "description": "Reproducer for an issue with Prisma and nyc and handling SIGTERM.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test.js",
+    "coverage": "nyc mocha test.js"
+  },
+  "author": "Bastian Krol <bastian.krol@web.de>",
+  "license": "ISC",
+  "devDependencies": {
+    "mocha": "^8.4.0",
+    "nyc": "^15.1.0",
+    "prisma": "^4.10.1"
+  },
+  "dependencies": {
+    "@prisma/client": "^4.10.1"
+  }
+}
